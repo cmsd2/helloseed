@@ -19,7 +19,7 @@ service: helloseed
 
 provider:
   name: aws
-  runtime: go1.x
+  runtime: nodejs6.10
   stage: dev
   region: us-east-1
   tracing: true
@@ -57,15 +57,9 @@ plugins:
   - serverless-plugin-stage-variables
   - serverless-plugin-tracing
 
-package:
-  individually: true
-
 functions:
   hello:
-    handler: bin/hello
-    package:
-      artifact: hello.zip
-      individually: true
+    handler: handler.hello
     deploymentSettings:
       type: AllAtOnce
       alias: live
