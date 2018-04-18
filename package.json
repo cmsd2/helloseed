@@ -1,13 +1,14 @@
 {
   "name": "helloseed",
   "version": "1.0.0",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/node": "^9.6.5",
     "serverless": "^1.26.1",
     "serverless-plugin-canary-deployments": "^0.4.0",
     "serverless-plugin-stage-variables": "^1.7.10",
-    "serverless-plugin-tracing": "^2.0.0"
+    "serverless-plugin-tracing": "^2.0.0",
+    "serverless-plugin-typescript": "^1.1.5"
   },
   "license": "Apache-2.0"
 }
